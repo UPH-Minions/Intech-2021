@@ -29,15 +29,37 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, 
+                $color-primary-light,
+                $color-primary-dark),
+                url(../../images/Mesh-3.png);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, 
+                $color-secondary-first 25%, 
+                $color-secondary-second 50%, 
+                $color-secondary-third 75%, 
+                $color-secondary-fourth 100%);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-fourth-light, $color-fourth-dark);
+                background-image: linear-gradient(to right bottom, 
+                $color-tertiary-first 20%, 
+                $color-tertiary-second 40%, 
+                $color-tertiary-third 60%, 
+                $color-tertiary-fourth 80%, 
+                $color-tertiary-fifth 100%);
+            }
+
+            &-4 {
+                background-image: linear-gradient(to right bottom, 
+                $color-quaternary-first 0%, 
+                $color-quaternary-second 20%, 
+                $color-quaternary-third 40%, 
+                $color-quaternary-fourth 60%, 
+                $color-quaternary-fifth 80%, 
+                $color-quaternary-sixth 100%);
             }
         }
     }
@@ -61,18 +83,40 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-                url(../../images/Intech-poster1.png);
+            background-image: linear-gradient(to right bottom, 
+            $color-primary-light,
+            $color-primary-dark),
+            url(../../images/About-Intech-1.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            background-image: linear-gradient(to right bottom, 
+            $color-secondary-first 25%, 
+            $color-secondary-second 50%, 
+            $color-secondary-third 75%, 
+            $color-secondary-fourth 100%), 
             url(../../images/Intech-poster1.png);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-fourth-light, $color-fourth-dark),
+            background-image: linear-gradient(to right bottom, 
+            $color-tertiary-first 20%, 
+            $color-tertiary-second 40%, 
+            $color-tertiary-third 60%, 
+            $color-tertiary-fourth 80%, 
+            $color-tertiary-fifth 100%), 
             url(../../images/Intech-poster1.png);
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, 
+                $color-quaternary-first 0%, 
+                $color-quaternary-second 20%, 
+                $color-quaternary-third 40%, 
+                $color-quaternary-fourth 60%, 
+                $color-quaternary-fifth 80%, 
+                $color-quaternary-sixth 100%),
+                url(../../images/Intech-poster1.png);
         }
     }
 
@@ -93,15 +137,36 @@
         -webkit-box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom, 
+            $color-primary-light,
+            $color-primary-dark);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary-first, .85) 25%, 
+            rgba($color-secondary-second, .85) 50%, 
+            rgba($color-secondary-third, .85) 75%, 
+            rgba($color-secondary-fourth, .85) 100%);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-fourth-light, .85), rgba($color-fourth-dark, .85));
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-tertiary-first, .85) 20%, 
+            rgba($color-tertiary-second, .85) 40%, 
+            rgba($color-tertiary-third, .85) 60%, 
+            rgba($color-tertiary-fourth, .85) 80%, 
+            rgba($color-tertiary-fifth, .85) 100%);
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-quaternary-first, .85) 0%, 
+            rgba($color-quaternary-second, .85) 20%, 
+            rgba($color-quaternary-third, .85) 40%, 
+            rgba($color-quaternary-fourth, .85) 60%, 
+            rgba($color-quaternary-fifth, .85) 80%,
+            rgba($color-quaternary-sixth, .85) 100%);
         }
     }
 
@@ -134,15 +199,18 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
     &__price-box {
         text-align: center;
         margin-bottom: 8rem;
         color: $color-white;
     }
+
     &__price-only {
         font-size: 1.4rem;
         text-transform: uppercase;
     }
+
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
