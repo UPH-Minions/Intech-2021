@@ -3,14 +3,15 @@
     perspective: 200rem;
     -moz-perspective: 200rem;
     position: relative;
-    height: 52rem;
+    height: 80rem;
+    border-radius: .3rem;
 
     &__side {
         color: $color-primary-dark;
         font-size: 2rem;
         opacity: .8;
 
-        height: 52rem;
+        height: 80rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -75,10 +76,10 @@
     //FRONT SIDE
     &__picture {
         background-size: cover;
-        height: 23rem;
+        height: 80rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
@@ -207,7 +208,7 @@
     }
 
     &__price-only {
-        font-size: 1.4rem;
+        font-size: 2rem;
         text-transform: uppercase;
     }
 

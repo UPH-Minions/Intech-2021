@@ -34,6 +34,10 @@ body {
         animation-name: moveInRight;
         animation-duration: 1s;
     }
+
+    &--logo{
+        max-width: 14%;
+    }
 }
 
 .heading-secondary {
