@@ -1,5 +1,5 @@
 .btn {
-
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -11,6 +11,10 @@
     position: relative;
     font-size: $default-font-size;
     font-weight: 500;
+
+    //Change for the button element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -23,7 +27,8 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     transform: translateY(-.1rem);
     box-shadow: 0 .5rem 1rem rgba($color-text-white-grey, .6);
   }
@@ -60,6 +65,7 @@
 }
 
 .btn-text {
+
   &:link,
   &:visited {
     color: $color-grey-light-1;
@@ -70,12 +76,14 @@
     font-size: $default-font-size;
     transition: all .2s;
   }
+
   &:hover {
     background-color: $color-effect-blue;
     color: $color-text-white-grey;
     box-shadow: 0 1rem 2rem rgba($color-text-white-grey, .2);
     transform: translateY(-.2rem);
   }
+
   &:active {
     box-shadow: 0 .5rem 1rem rgba($color-text-white-grey, .2);
     transform: translateY(0);
