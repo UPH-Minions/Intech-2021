@@ -10,7 +10,7 @@
     }
 
     &__logo {
-        width: 15rem;
+        width: 30rem;
         height: auto;
     }
 
@@ -54,7 +54,7 @@
         border-top: 1px solid $color-grey-light-1;
         padding-top: 2rem;
         display: inline-block;
-        width: 80%;
+        // width: 80%;
         float: right;
     }
 }

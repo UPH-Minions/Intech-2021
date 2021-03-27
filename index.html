@@ -18,6 +18,25 @@
 </head>
 
 <body>
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About INTECH</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Tagline</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Our Events</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Motivation</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Critics</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <header>
     <div class="header">
       <div class="header__logo-box">
@@ -31,7 +50,7 @@
           <span class="heading-primary--sub">Innovative, Inventive, Ingenuitive</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">More About Intech</a>
+        <a href="#section-events" class="btn btn--white btn--animated">Our Events</a>
       </div>
 
     </div>
@@ -112,7 +131,7 @@
       </div>
     </section>
 
-    <section class="section-events">
+    <section class="section-events" id="section-events">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           Our Events
@@ -145,7 +164,7 @@
                   <div class="card__price-only">Only</div>
                   <div class="card__price-value">IDR15K</div>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -176,7 +195,7 @@
                   <div class="card__price-only">Only</div>
                   <div class="card__price-value">IDR15K</div>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -209,7 +228,7 @@
                   <div class="card__price-only">Only</div>
                   <div class="card__price-value">IDR15K</div>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -240,7 +259,7 @@
                   <div class="card__price-only">Only</div>
                   <div class="card__price-value">IDR15K</div>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
           </div>
@@ -333,10 +352,12 @@
       </div>
     </section>
   </main>
-  
+
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="images/LOGO.png" alt="Full logo" class="footer__logo">
+      <img src="images/HMPTIF.png" alt="Full logo" class="footer__logo">
+      <img src="images/logofooter.png" alt="Full logo" class="footer__logo">
+      <img src="images/HMPSSI.png" alt="Full logo" class="footer__logo">
     </div>
     <div class="row">
       <div class="col-1-of-2">
@@ -357,6 +378,28 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="images/About-Intech-2.jpg" alt="Poster" class="popup__img">
+        <!-- <img src="images/About-Intech-1.jpg" alt="Poster" class="popup__img"> -->
+      </div>
+      <div class="popup__right">
+        <a href="#section-events" class="popup__close">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these term before booking</h3>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptate officiis excepturi inventore
+          commodi
+          rerum maxime! Itaque sit harum tempore praesentium qui vitae libero. Minima architecto labore voluptatum!
+          Asperiores, nesciunt?
+          rerum maxime! Itaque sit harum tempore praesentium qui vitae libero.
+        </p>
+        <a href="#" class="btn btn--white">Book Now</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
