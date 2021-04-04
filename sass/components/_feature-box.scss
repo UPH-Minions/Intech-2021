@@ -7,19 +7,25 @@
     box-shadow: 0 1.5rem 4rem rgba($color-text-white-grey, .15);
     transition: transform .15s;
 
-    &__icon{
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
+    &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
         background-image: linear-gradient(to right, $color-gradient-red, $color-gradient-purple);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
 
     &:hover {
-        transform: translateY(-1.2rem) scale(1.03); 
+        transform: translateY(-1.2rem) scale(1.03);
     }
 
-    &__text{
-        
-    }
+    &__text {}
 }
