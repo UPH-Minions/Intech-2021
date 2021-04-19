@@ -781,3 +781,28 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.box-sizing{
+  padding: 10rem 50rem;
+  margin-bottom: 7rem;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+}
+.line:before, .line:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 0.5rem solid;
+  border-radius: 2rem;
+  margin: auto;
+}
+.line:before {
+  margin-right: 10px
+}
+.line:after {
+  margin-left: 10px
+}
