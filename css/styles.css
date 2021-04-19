@@ -139,9 +139,15 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -250,14 +256,6 @@ body {
       background-color: #fff; }
     .card__side--back {
       transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #1b1b1b, #141414), url(../../images/Mesh-3.png); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #0e056c 25%, #027bb7 50%, #7c62bf 75%, #bfd2f3 100%); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #1d2171 20%, #24287f 40%, #5263b7 60%, #cb4d69 80%, #cb94ae 100%); }
-      .card__side--back-4 {
-        background-image: linear-gradient(to right bottom, #001c46 0%, #004c61 20%, #03b5af 40%, #3952d1 60%, #7b11e9 80%, #e7359b 100%); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -270,12 +268,6 @@ body {
     border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #1b1b1b, #141414), url(../../images/About-Intech-1.jpg); }
-    .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #0e056c 25%, #027bb7 50%, #7c62bf 75%, #bfd2f3 100%), url(../../images/Intech-poster1.png); }
-    .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #1d2171 20%, #24287f 40%, #5263b7 60%, #cb4d69 80%, #cb94ae 100%), url(../../images/Intech-poster1.png); }
-    .card__picture--4 {
-      background-image: linear-gradient(to right bottom, #001c46 0%, #004c61 20%, #03b5af 40%, #3952d1 60%, #7b11e9 80%, #e7359b 100%), url(../../images/Intech-poster1.png); }
   .card__heading {
     font-size: 2rem;
     font-weight: 300;
@@ -291,12 +283,6 @@ body {
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, #1b1b1b, #141414); }
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(14, 5, 108, 0.85) 25%, rgba(2, 123, 183, 0.85) 50%, rgba(124, 98, 191, 0.85) 75%, rgba(191, 210, 243, 0.85) 100%); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(29, 33, 113, 0.85) 20%, rgba(36, 40, 127, 0.85) 40%, rgba(82, 99, 183, 0.85) 60%, rgba(203, 77, 105, 0.85) 80%, rgba(203, 148, 174, 0.85) 100%); }
-    .card__heading-span--4 {
-      background-image: linear-gradient(to right bottom, rgba(0, 28, 70, 0.85) 0%, rgba(0, 76, 97, 0.85) 20%, rgba(3, 181, 175, 0.85) 40%, rgba(57, 82, 209, 0.85) 60%, rgba(123, 17, 233, 0.85) 80%, rgba(231, 53, 155, 0.85) 100%); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -326,6 +312,42 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: .3rem;
+      box-shadow: 0 1.5rem 4rem rgba(247, 247, 247, 0.15); }
+      .card__side {
+        color: #141414;
+        font-size: 2rem;
+        opacity: .8;
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+          .card__side--back-1 {
+            background-image: linear-gradient(to right bottom, #1b1b1b, #141414), url(../../images/Mesh-3.png); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0);
+        text-align: center;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-only {
+        font-size: 2rem;
+        text-transform: uppercase; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .composition {
   position: relative; }
@@ -336,15 +358,35 @@ body {
     position: absolute;
     z-index: 10;
     transition: all .2s; }
+    @media (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333%;
+        box-shadow: 0 1.5rem 3rem rgba(234, 234, 234, 0.15); } }
     .composition__photo--p1 {
       left: 0;
       top: 0; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: translate(1.2); } }
     .composition__photo--p2 {
       right: 0;
       top: 5rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: -1rem;
+          transform: translate(1.3);
+          z-index: 100; } }
     .composition__photo--p3 {
       left: 20%;
       top: 17rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 0;
+          left: 0;
+          transform: translate(1.1); } }
     .composition__photo--p4 {
       right: 10%;
       top: 20rem; }
@@ -363,12 +405,18 @@ body {
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(234, 234, 234, 0.15);
   transition: transform .15s; }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
     background-image: linear-gradient(to right, #DA4453, #89216B);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-1.2rem) scale(1.03); }
 
@@ -387,6 +435,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input::-webkit-input-placeholder {
     color: #999; }
   .form__input:focus:invalid {
@@ -438,14 +489,23 @@ body {
   .popup__left {
     width: 33.33333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        width: 0%; } }
   .popup__right {
     width: 66.66667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        width: 0%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -491,6 +551,14 @@ body {
   transform: skewX(-12deg); }
   .story:not(:last-child) {
     margin-bottom: 10rem; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -501,6 +569,9 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     transform: translateX(0) scale(1.4);
@@ -508,6 +579,9 @@ body {
     transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -531,16 +605,32 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 30rem;
     height: auto; }
+    @media (max-width: 56.25em) {
+      .footer__logo {
+        width: 20rem; } }
+    @media (max-width: 37.5em) {
+      .footer__logo {
+        width: 15rem; } }
   .footer__navigation {
     border-top: 1px solid #f7f7f7;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -561,6 +651,10 @@ body {
     padding-top: 2rem;
     display: inline-block;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .row {
   max-width: 125rem;
@@ -572,7 +666,8 @@ body {
         margin-bottom: 4rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -607,8 +702,8 @@ body {
   clip-path: polygon(0 0, 0 100%, 100% 75vh, 100% 0); }
   @media (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0);
-      clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0); } }
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 85vh, 100% 0);
+      clip-path: polygon(0 0, 0 100%, 100% 85vh, 100% 0); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -641,6 +736,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(234, 234, 234, 0.3);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -652,6 +755,14 @@ body {
   background-image: radial-gradient(#004c61, #03b5af);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -746,6 +857,9 @@ body {
   margin-top: -14vh; }
   .section-about > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -756,31 +870,50 @@ body {
   margin-top: -11.5rem; }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0; } }
 
 .section-events {
   background-image: linear-gradient(to right top, rgba(27, 27, 27, 0.8), rgba(20, 20, 20, 0.8)), url(../images/Meshbg.png);
   background-size: cover;
   padding: 25rem 0 15rem 0;
   margin-top: -11rem; }
+  @media (max-width: 56.25em) {
+    .section-events {
+      padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 12rem 0; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to left bottom, rgba(27, 27, 27, 0.8), rgba(20, 20, 20, 0.8)), url(../images/Meshbg.png);
   background-size: cover; }
+  @media (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(27, 27, 27, 0.9) 0%, rgba(27, 27, 27, 0.9) 50%, transparent 50%), url(../images/Intech-poster1.png);
-  background-size: cover;
-  height: 55rem;
+  background-size: 100%;
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(234, 234, 234, 0.8); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(27, 27, 27, 0.9) 0%, rgba(27, 27, 27, 0.9) 65%, transparent 65%), url(../images/Intech-poster1.png);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(27, 27, 27, 0.9) 0%, rgba(27, 27, 27, 0.9) 100%, transparent 100%), url(../images/Intech-poster1.png); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+<<<<<<< HEAD
 
 .box-sizing{
   padding: 10rem 50rem;
@@ -806,3 +939,11 @@ body {
 .line:after {
   margin-left: 10px
 }
+=======
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
+>>>>>>> 36907d6a8456396908cbf3e96196517306c14d45
