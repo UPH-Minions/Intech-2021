@@ -913,14 +913,14 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 .box-sizing{
-  padding: 10rem 50rem;
-  margin-bottom: 7rem;
+  padding: 7% 0;
+  margin-bottom: 4rem;
   background-size: cover;
   border-radius: 2rem;
+  background-color: #fff;
 }
 
 .line {
@@ -940,7 +940,7 @@ body {
 .line:after {
   margin-left: 10px
 }
-=======
+/* =======
 =======
 >>>>>>> 36907d6a8456396908cbf3e96196517306c14d45
     @media (max-width: 75em) {
@@ -952,4 +952,4 @@ body {
 <<<<<<< HEAD
 >>>>>>> 36907d6a8456396908cbf3e96196517306c14d45
 =======
->>>>>>> 36907d6a8456396908cbf3e96196517306c14d45
+>>>>>>> 36907d6a8456396908cbf3e96196517306c14d45 */
