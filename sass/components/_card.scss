@@ -53,6 +53,27 @@
             background-image: linear-gradient(to right bottom,
                     $color-primary-light,
                     $color-primary-dark),
+                url(../../images/PosterIntech1.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark),
+                url(../../images/PosterIntech2.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark),
+                url(../../images/PosterIntech3.jpg);
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark),
                 url(../../images/About-Intech-1.jpg);
         }
     }
